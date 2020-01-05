@@ -12,7 +12,8 @@ import {MatInputModule} from '@angular/material/input';
 import {DemoMaterialModule} from './app/material-module';
 
 import {TableBasicExample} from './app/table-basic-example';
-import {InputOverviewExample} from './input/input-Overview-example'
+import {InputOverviewExample} from './input/input-Overview-example';
+import{MenuPositionExample} from './navbar/navbar';
 
 @NgModule({
   imports: [
@@ -26,8 +27,8 @@ import {InputOverviewExample} from './input/input-Overview-example'
     MatInputModule,
   ],
   entryComponents: [TableBasicExample],
-  declarations: [TableBasicExample,InputOverviewExample],
-  bootstrap: [TableBasicExample],
+  declarations: [TableBasicExample,InputOverviewExample,MenuPositionExample],
+  bootstrap: [TableBasicExample,InputOverviewExample,MenuPositionExample],
   providers: []
 })
 export class AppModule {}
