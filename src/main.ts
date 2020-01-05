@@ -7,9 +7,12 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+
 import {DemoMaterialModule} from './app/material-module';
 
 import {TableBasicExample} from './app/table-basic-example';
+import {InputOverviewExample} from './input/input-Overview-example'
 
 @NgModule({
   imports: [
@@ -20,9 +23,10 @@ import {TableBasicExample} from './app/table-basic-example';
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    MatInputModule,
   ],
   entryComponents: [TableBasicExample],
-  declarations: [TableBasicExample],
+  declarations: [TableBasicExample,InputOverviewExample],
   bootstrap: [TableBasicExample],
   providers: []
 })
